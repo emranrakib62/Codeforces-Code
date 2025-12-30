@@ -5,23 +5,23 @@ int main() {
     long long n;
     cin >> n;
 
-    int bills = 0;
+    int bill = 0;
 
-    bills =bills + n / 100;
+    bill =bill + n / 100;
     n=n%100;
 
-    bills =bills + n / 20;
+    bill =bill + n / 20;
     n =n % 20;
 
-    bills += n / 10;
+    bill += n / 10;
     n =n % 10;
 
-    bills += n / 5;
+    bill += n / 5;
     n =n % 5;
 
-    bills += n;
+    bill += n;
 
-    cout << bills << endl;
+    cout << bill<< endl;
     return 0;
 }
 
